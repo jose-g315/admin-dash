@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="grid-container">
         <div class="header">
             <div class="header-container search-bar">
-                <img src="./images/magnify.svg" alt="magnifying glass" class="search-icon">
+                <label for="search"><img src="./images/magnify.svg" alt="magnifying glass" class="search-icon"></label>
                 <input type="text" name="search" id="search">
             </div>
             <div class="header-container header-profile">
@@ -19,146 +19,204 @@
                 <div class="profile-bar profile-name small-name">Jane Doe</div>
             </div>
             <div class="header-container greeting">
-                <img src="./images/cactus-7975384_640.jpg" alt="happy cactus" class="big-picture">
-                <div class="welcome-message">Hello there,</div>
-                <div class="profile-name big-name">Jane Dow (@jDoe)</div>
+                <img src="./images/cactus-7975384_640.jpg" alt="happy cactus" class="greeting-picture">
+                <div class="message">
+                    <div class="welcome-message">Hello there,</div>
+                    <div class="profile-name big-name">Jane Doe (@jDoe)</div>
+                </div>
             </div>
             <div class="header-container button-container">
-                <button class="header-button new">New</button>
-                <button class="header-button upload">Upload</button>
-                <button class="header-button share">Share</button>
+                <button class="header-button">New</button>
+                <button class="header-button">Upload</button>
+                <button class="header-button">Share</button>
             </div>
         </div>
         <div class="sidebar">
             <ul class="dashboard">
-                <li class="dash-item dash-dashboard"><img src="./images/view-dashboard-variant.svg" alt="dashboard" class="dash-icon"><div class="dash-word">Dashboard</div></li>
-                <li class="dash-item dash-empty"></li>
-                <li class="dash-item dash-home"><img src="./images/home-circle-outline.svg" alt="house" class="dash-icon"><div>Home</div></li>
-                <li class="dash-item dash-profile"><img src="./images/account-box-outline.svg" alt="profile" class="dash-icon"><div>Profile</div></li>
-                <li class="dash-item dash-messages"> <img src="./images/email-multiple.svg" alt="envelopes" class="dash-icon"><div>Messages</div></li>
-                <li class="dash-item dash-history"><img src="./images/history.svg" alt="clock" class="dash-icon"><div>History</div></li>
-                <li class="dash-item dash-tasks"><img src="./images/file-alert-outline.svg" alt="file" class="dash-icon"><div>Tasks</div></li>
-                <li class="dash-item dash-communities"><img src="./images/account-group.svg" alt="group of people" class="dash-icon"><div>Communities</div></li>
-                <li class="dash-item dash-empty"></li>
-                <li class="dash-item dash-settings"><img src="./images/cogs.svg" alt="cogs" class="dash-icon"><div>Settings</div></li>
-                <li class="dash-item dash-support"><img src="./images/face-agent.svg" alt="face" class="dash-icon"><div>Support</div></li>
-                <li class="dash-item dash-privacy"><img src="./images/shield-account.svg" alt="shield" class="dash-icon"><div>Privacy</div></li>
+                <li class="dash-item">
+                    <a href="index.html">
+                        <img src="./images/view-dashboard-variant.svg" alt="dashboard" class="dash-icon top">
+                        <span class="dash-word top">Dashboard</span>
+                    </a>
+                </li>
+                <br>
+                <li class="dash-item dash-home">
+                    <a href="index.html">
+                        <img src="./images/home-circle-outline.svg" alt="house" class="dash-icon">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="dash-item">
+                    <a href="index.html">
+                        <img src="./images/account-box-outline.svg" alt="profile" class="dash-icon">
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="dash-item">
+                    <a href="index.html">
+                        <img src="./images/email-multiple.svg" alt="envelopes" class="dash-icon">
+                        <span>Messages</span>
+                    </a>
+                </li>
+                <li class="dash-item">
+                    <a href="index.html">
+                        <img src="./images/history.svg" alt="clock" class="dash-icon">
+                        <span>History</span>
+                    </a>
+                </li>
+                <li class="dash-item">
+                    <a href="index.html">
+                        <img src="./images/file-alert-outline.svg" alt="file" class="dash-icon">
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <li class="dash-item">
+                    <a href="index.html">
+                        <img src="./images/account-group.svg" alt="group of people" class="dash-icon">
+                        <span>Communities</span>
+                    </a>
+                </li>
+                <br>
+                <li class="dash-item dash-settings">
+                    <a href="index.html">
+                        <img src="./images/cogs.svg" alt="cogs" class="dash-icon">
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="dash-item">
+                    <a href="index.html">
+                        <img src="./images/face-agent.svg" alt="face" class="dash-icon">
+                        <span>Support</span>
+                    </a>
+                </li>
+                <li class="dash-item">
+                    <a href="index.html">
+                        <img src="./images/shield-account.svg" alt="shield" class="dash-icon">
+                        <span>Privacy</span>
+                    </a>
+                </li> 
             </ul>
         </div>
         <div class="content">
-            <div class="card-container">
-                <div class="cards-title">Your Projects</div>
-                <div class="card card-one">
-                    <div class="card-text">
-                        <p class="card-title">Project One<p>
-                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit, a sequi aperiam enim suscipit quis ipsum unde, quisquam ipsam, quos minus dolorem? Unde dolor dolorem aliquid! Unde, dicta assumenda?</p>
+            <div class="content-projects">
+                <h3 class="cards-title">Your Projects</h3>
+                <div class="card-container">
+                    <div class="card card-one">
+                        <div class="card-text">
+                            <p class="card-title">Project One<p>
+                            <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit, a sequi aperiam enim suscipit quis ipsum unde, quisquam ipsam, quos minus dolorem? Unde dolor dolorem aliquid! Unde, dicta assumenda?</p>
+                        </div>
+                        <div class="icons">
+                            <div class="icon one"><img src="./images/heart.svg" alt="" class="svg-icon"></div>
+                            <div class="icon two"><img src="./images/file-edit.svg" alt="" class="svg-icon"></div>
+                            <div class="icon three"><img src="./images/export-variant.svg" alt="" class="svg-icon"></div>
+                        </div>
                     </div>
-                    <div class="icons">
-                        <div class="icon one"><img src="./images/heart.svg" alt="" class="svg-icon"></div>
-                        <div class="icon two"><img src="./images/file-edit.svg" alt="" class="svg-icon"></div>
-                        <div class="icon three"><img src="./images/export-variant.svg" alt="" class="svg-icon"></div>
+                    <div class="card card-two">
+                        <div class="card-text">
+                            <p class="card-title">Project Two<p>
+                            <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit, a sequi aperiam enim suscipit quis ipsum unde, quisquam ipsam, quos minus dolorem? Unde dolor dolorem aliquid! Unde, dicta assumenda?</p>
+                        </div>
+                        <div class="icons">
+                            <div class="icon one"><img src="./images/heart.svg" alt="" class="svg-icon"></div>
+                            <div class="icon two"><img src="./images/file-edit.svg" alt="" class="svg-icon"></div>
+                            <div class="icon three"><img src="./images/export-variant.svg" alt="" class="svg-icon"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="card card-two">
-                    <div class="card-text">
-                        <p class="card-title">Project Two<p>
-                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit, a sequi aperiam enim suscipit quis ipsum unde, quisquam ipsam, quos minus dolorem? Unde dolor dolorem aliquid! Unde, dicta assumenda?</p>
+                    <div class="card card-three">
+                        <div class="card-text">
+                            <p class="card-title">Project Three<p>
+                            <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit, a sequi aperiam enim suscipit quis ipsum unde, quisquam ipsam, quos minus dolorem? Unde dolor dolorem aliquid! Unde, dicta assumenda?</p>
+                        </div>
+                        <div class="icons">
+                            <div class="icon one"><img src="./images/heart.svg" alt="" class="svg-icon"></div>
+                            <div class="icon two"><img src="./images/file-edit.svg" alt="" class="svg-icon"></div>
+                            <div class="icon three"><img src="./images/export-variant.svg" alt="" class="svg-icon"></div>
+                        </div>
                     </div>
-                    <div class="icons">
-                        <div class="icon one"><img src="./images/heart.svg" alt="" class="svg-icon"></div>
-                        <div class="icon two"><img src="./images/file-edit.svg" alt="" class="svg-icon"></div>
-                        <div class="icon three"><img src="./images/export-variant.svg" alt="" class="svg-icon"></div>
+                    <div class="card card-four">
+                        <div class="card-text">
+                            <p class="card-title">Project Four<p>
+                            <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit, a sequi aperiam enim suscipit quis ipsum unde, quisquam ipsam, quos minus dolorem? Unde dolor dolorem aliquid! Unde, dicta assumenda?</p>
+                        </div>
+                        <div class="icons">
+                            <div class="icon one"><img src="./images/heart.svg" alt="" class="svg-icon"></div>
+                            <div class="icon two"><img src="./images/file-edit.svg" alt="" class="svg-icon"></div>
+                            <div class="icon three"><img src="./images/export-variant.svg" alt="" class="svg-icon"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="card card-three">
-                    <div class="card-text">
-                        <p class="card-title">Project Three<p>
-                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit, a sequi aperiam enim suscipit quis ipsum unde, quisquam ipsam, quos minus dolorem? Unde dolor dolorem aliquid! Unde, dicta assumenda?</p>
+                    <div class="card card-five">
+                        <div class="card-text">
+                            <p class="card-title">Project Five<p>
+                            <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit, a sequi aperiam enim suscipit quis ipsum unde, quisquam ipsam, quos minus dolorem? Unde dolor dolorem aliquid! Unde, dicta assumenda?</p>
+                        </div>
+                        <div class="icons">
+                            <div class="icon one"><img src="./images/heart.svg" alt="" class="svg-icon"></div>
+                            <div class="icon two"><img src="./images/file-edit.svg" alt="" class="svg-icon"></div>
+                            <div class="icon three"><img src="./images/export-variant.svg" alt="" class="svg-icon"></div>
+                        </div>
                     </div>
-                    <div class="icons">
-                        <div class="icon one"><img src="./images/heart.svg" alt="" class="svg-icon"></div>
-                        <div class="icon two"><img src="./images/file-edit.svg" alt="" class="svg-icon"></div>
-                        <div class="icon three"><img src="./images/export-variant.svg" alt="" class="svg-icon"></div>
-                    </div> 
-                </div>
-                <div class="card card-four">
-                    <div class="card-text">
-                        <p class="card-title">Project Four<p>
-                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit, a sequi aperiam enim suscipit quis ipsum unde, quisquam ipsam, quos minus dolorem? Unde dolor dolorem aliquid! Unde, dicta assumenda?</p>
+                    <div class="card card-six">
+                        <div class="card-text">
+                            <p class="card-title">Project Six<p>
+                            <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit, a sequi aperiam enim suscipit quis ipsum unde, quisquam ipsam, quos minus dolorem? Unde dolor dolorem aliquid! Unde, dicta assumenda?</p>
+                        </div>
+                        <div class="icons">
+                            <div class="icon one"><img src="./images/heart.svg" alt="" class="svg-icon"></div>
+                            <div class="icon two"><img src="./images/file-edit.svg" alt="" class="svg-icon"></div>
+                            <div class="icon three"><img src="./images/export-variant.svg" alt="" class="svg-icon"></div>
+                        </div>
                     </div>
-                    <div class="icons">
-                        <div class="icon one"><img src="./images/heart.svg" alt="" class="svg-icon"></div>
-                        <div class="icon two"><img src="./images/file-edit.svg" alt="" class="svg-icon"></div>
-                        <div class="icon three"><img src="./images/export-variant.svg" alt="" class="svg-icon"></div>
-                    </div> 
-                </div>
-                <div class="card card-five">
-                    <div class="card-text">
-                        <p class="card-title">Project Five<p>
-                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit, a sequi aperiam enim suscipit quis ipsum unde, quisquam ipsam, quos minus dolorem? Unde dolor dolorem aliquid! Unde, dicta assumenda?</p>
-                    </div>
-                    <div class="icons">
-                        <div class="icon one"><img src="./images/heart.svg" alt="" class="svg-icon"></div>
-                        <div class="icon two"><img src="./images/file-edit.svg" alt="" class="svg-icon"></div>
-                        <div class="icon three"><img src="./images/export-variant.svg" alt="" class="svg-icon"></div>
-                    </div> 
-                </div>
-                <div class="card card-six">
-                    <div class="card-text">
-                        <p class="card-title">Project Six<p>
-                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit, a sequi aperiam enim suscipit quis ipsum unde, quisquam ipsam, quos minus dolorem? Unde dolor dolorem aliquid! Unde, dicta assumenda?</p>
-                    </div>
-                    <div class="icons">
-                        <div class="icon one"><img src="./images/heart.svg" alt="" class="svg-icon"></div>
-                        <div class="icon two"><img src="./images/file-edit.svg" alt="" class="svg-icon"></div>
-                        <div class="icon three"><img src="./images/export-variant.svg" alt="" class="svg-icon"></div>
-                    </div> 
                 </div>
             </div>
             <div class="content-sidebar">
-                <div class="content-sidebar-title">Site Maintenance</div>
                 <div class="announcements">
-                    <div class="announcement announcement-one">
-                        <p class="announcement-title">New Feature</p>
-                        <p class="announcement-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque!</p>
-                    </div>
-                    <div class="announcement announcement-two">
-                        <p class="announcement-title">Community Event</p>
-                        <p class="announcement-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque!</p>
-                    </div>
-                    <div class="announcement announcement-three">
-                        <p class="announcement-title">Big Event!</p>
-                        <p class="announcement-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque!</p>
+                    <h3 class="content-sidebar-title">Site Maintenance</h3>
+                    <div class="announcements-container">
+                        <div class="announcement announcement-one">
+                            <p class="announcement-title">New Feature</p>
+                            <p class="announcement-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque!</p>
+                        </div>
+                        <div class="announcement announcement-two">
+                            <p class="announcement-title">Community Event</p>
+                            <p class="announcement-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque!</p>
+                        </div>
+                        <div class="announcement announcement-three">
+                            <p class="announcement-title">Big Event!</p>
+                            <p class="announcement-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque!</p>
+                        </div>
                     </div>
                 </div>
-                <div class="content-sidebar-title">Trending</div>
                 <div class="trending">
-                    <div class="trend">
-                        <img src="./images/fox-5679446_640.png" alt="fox" class="trend-icon">
-                        <div class="trend-text">
-                            <p>@lMartinez</p>
-                            <p>Image by <a href="https://pixabay.com/users/satheeshsankaran-11196627/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5679446">Satheesh Sankaran</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5679446">Pixabay</a></p>
+                    <h3 class="content-sidebar-title">Trending</h3>
+                    <div class="trending-container">
+                        <div class="trend">
+                            <img src="./images/fox-5679446_640.png" alt="fox" class="trend-icon">
+                            <div class="trend-text">
+                                <p class="trend-title">@lMartinez</p>
+                                <p>Image by <a href="https://pixabay.com/users/satheeshsankaran-11196627/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5679446">Satheesh Sankaran</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5679446">Pixabay</a></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="trend">
-                        <img src="./images/cartoon-5544856_640.jpg" alt="two polar bears" class="trend-icon">
-                        <div class="trend-text">
-                            <p>@pHart</p>
-                            <p>Image by <a href="https://pixabay.com/users/onceinueng_63632924-7520188/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5544856">Kankanravee Kanyawath</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5544856">Pixabay</a></p>
+                        <div class="trend">
+                            <img src="./images/cartoon-5544856_640.jpg" alt="two polar bears" class="trend-icon">
+                            <div class="trend-text">
+                                <p class="trend-title">@pHart</p>
+                                <p>Image by <a href="https://pixabay.com/users/onceinueng_63632924-7520188/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5544856">Kankanravee Kanyawath</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5544856">Pixabay</a></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="trend">
-                        <img src="./images/robot-8449206_640.jpg" alt="happy robot" class="trend-icon">
-                        <div class="trend-text">
-                            <p>@hTerry</p>
-                            <p>Image by <a href="https://pixabay.com/users/andremsdesign-40088375/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8449206">André Santana</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8449206">Pixabay</a></p>
+                        <div class="trend">
+                            <img src="./images/robot-8449206_640.jpg" alt="happy robot" class="trend-icon">
+                            <div class="trend-text">
+                                <p class="trend-title">@hTerry</p>
+                                <p>Image by <a href="https://pixabay.com/users/andremsdesign-40088375/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8449206">André Santana</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8449206">Pixabay</a></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="trend">
-                        <img src="./images/cactus-7975384_640.jpg" alt="happy cactus" class="trend-icon">
-                        <div class="trend-text">
-                            <p>@jDoe</p>
-                            <p>Image by <a href="https://pixabay.com/users/susan-lu4esm-7009216/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7975384">Susan Cipriano</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7975384">Pixabay</a></p>
+                        <div class="trend">
+                            <img src="./images/cactus-7975384_640.jpg" alt="happy cactus" class="trend-icon">
+                            <div class="trend-text">
+                                <p class="trend-title">@jDoe</p>
+                                <p>Image by <a href="https://pixabay.com/users/susan-lu4esm-7009216/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7975384">Susan Cipriano</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7975384">Pixabay</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>

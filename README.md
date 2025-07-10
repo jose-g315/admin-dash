@@ -1,7 +1,10 @@
 # admin-dash
-Dashboard project from TOP using mostly CSS grid to style the page. <br>
-This page utilized minmax() and media queries to correctly resize elements as the window shrinks.
-There is no functionality to it as it was just a project to practice CSS grid.
+Static Dashboard project from TOP using mostly CSS grid to style the layout of the page. 
+
+
+## Purpose
+To practice CSS Grid and make the page more responsive.
+
 
 ## Link
 https://jose-g315.github.io/admin-dash/
